@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DevOps</title>
+
+	<meta name=”viewport” content=”width=device-width,  initial-scale=1, user-scalable=yes″>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+</head>
+<style>
+
+	
+@viewport
+  {
+    width:extend-to-zoom;
+    zoom:1.0;
+  }
+@-ms-viewport
+  {
+     width:extend-to-zoom;
+    zoom:1.0;
+  }
+	
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    }
+    
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    
+    html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    
+    .clear {clear: both;}
+    
+    p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    #cv {
+        width: 90%;
+        max-width: 800px;
+        background: #f3f3f3;
+        margin: 30px auto;
+    }
+    
+    .mainDetails {
+        padding: 25px 35px;
+        border-bottom: 2px solid #cf8a05;
+        background: #ededed;
+    }
+    
+    #name h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        margin-bottom: -6px;
+    }
+    
+    #name h2 {
+        font-size: 2em;
+        margin-left: 2px;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    
+    #mainArea {
+        padding: 0 40px;
+    }
+    
+    #headshot {
+        width: 12.5%;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #headshot img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    #name {
+        float: left;
+    }
+    
+    #contactDetails {
+        float: right;
+    }
+    
+    #contactDetails ul {
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+    
+    #contactDetails ul li {
+        margin-bottom: 3px;
+        color: #444;
+    }
+    
+    #contactDetails ul li a, a[href^=tel] {
+        color: #444; 
+        text-decoration: none;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    
+    #contactDetails ul li a:hover { 
+        color: #cf8a05;
+    }
+    
+    
+    section {
+        border-top: 1px solid #dedede;
+        padding: 20px 0 0;
+    }
+    
+    section:first-child {
+        border-top: 0;
+    }
+    
+    section:last-child {
+        padding: 20px 0 10px;
+    }
+    
+    .sectionTitle {
+        float: left;
+        width: 25%;
+    }
+    
+    .sectionContent {
+        float: right;
+        width: 72.5%;
+    }
+    
+    .sectionTitle h1 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #cf8a05;
+    }
+    
+    .sectionContent h2 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: -2px;
+    }
+    
+    .subDetails {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+    
+    .keySkills {
+        list-style-type: none;
+        -moz-column-count:3;
+        -webkit-column-count:3;
+        column-count:3;
+        margin-bottom: 20px;
+        font-size: 1em;
+        color: #444;
+    }
+    
+    .keySkills ul li {
+        margin-bottom: 3px;
+    }
+    
+    @media all and (min-width: 602px) and (max-width: 800px) {
+        #headshot {
+            display: none;
+        }
+        
+        .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 601px) {
+        #cv {
+            width: 95%;
+            margin: 10px auto;
+            min-width: 280px;
+        }
+        
+        #headshot {
+            display: none;
+        }
+        
+        #name, #contactDetails {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .sectionTitle, .sectionContent {
+            float: none;
+            width: 100%;
+        }
+        
+        .sectionTitle {
+            margin-left: -2px;
+            font-size: 1.25em;
+        }
+        
+        .keySkills {
+            -moz-column-count:2;
+            -webkit-column-count:2;
+            column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 480px) {
+        .mainDetails {
+            padding: 15px 15px;
+        }
+        
+        section {
+            padding: 15px 0 0;
+        }
+        
+        #mainArea {
+            padding: 0 25px;
+        }
+    
+        
+        .keySkills {
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+        }
+        
+        #name h1 {
+            line-height: .8em;
+            margin-bottom: 4px;
+        }
+    }
+    
+    @media print {
+        #cv {
+            width: 100%;
+        }
+    }
+    
+    @-webkit-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .instaFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+    
+    .quickFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 2.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+    }
+     
+    .delayOne {
+        -webkit-animation-delay: 0, .5s;
+        -moz-animation-delay: 0, .5s;
+        animation-delay: 0, .5s;
+    }
+    
+    .delayTwo {
+        -webkit-animation-delay: 0, 1s;
+        -moz-animation-delay: 0, 1s;
+        animation-delay: 0, 1s;
+    }
+    
+    .delayThree {
+        -webkit-animation-delay: 0, 1.5s;
+        -moz-animation-delay: 0, 1.5s;
+        animation-delay: 0, 1.5s;
+    }
+    
+    .delayFour {
+        -webkit-animation-delay: 0, 2s;
+        -moz-animation-delay: 0, 2s;
+        animation-delay: 0, 2s;
+    }
+    
+    .delayFive {
+        -webkit-animation-delay: 0, 2.5s;
+        -moz-animation-delay: 0, 2.5s;
+        animation-delay: 0, 2.5s;
+	}
+	
+
+    .headings
+    {
+        font-size: xx-large;
+    }
+    .mini-headings
+    {
+        font-size: x-large;
+        font-style: oblique;
+        color:darkgoldenrod
+    }
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body id="top">
+
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX///8AAADz8/P09PT+/v79/f319fX8/Pz39/f29vb6+vr7+/v4+PgEBASHh4ccHBzCwsLr6+vZ2dmamprk5OTMzMysrKzV1dW0tLR+fn7g4OCkpKSVlZXKyspZWVk2NjZCQkJMTEwnJydqamqMjIw4ODhzc3O6urpdXV0uLi5aWlojIyMZGRk3NzdRUVERERFvb25cu2v1AAAZ6ElEQVR4nN1d52KiShQeEAQGLKhobLHGssnN5v2f7k5nKoKarIYfGzY5wzkfU06dAQB6BYFxA1w3309738eRK0rpf4MoEjf0L2EqbkIXrUFiowUOWk7ShLaJmPSCGf11ACH9dQgho8tSepNm0RW08CItfxzgJII24rTXsebPJVeW0F8HcUJ/HSYxfUSasEdAfiPRMi5JBnTalNMyifjjIk4rPY7RGqxttAZrU8xUoyVPzVr010G7RblErTZtCf2YNfDZI5IWa9lqMUH8BKi0MadtM9qQ06YlbabSCtYhZ51aWF8hJhmzHDcS+nJLX6f1206AfhOALtqM05qsWzprU0wyeCM2csvX6N8VYFAKLWgNgM6XYQJsl6zdYjLWSRbwfsSC+AbARGvZLgHyIXpLDyYlQI11arAu321Jq7HOzHdLHse0htwr/26ImgCdQ/SymIK11rLG4H6SOchpGZfLQ/TOc9AyRGvMQVNM5xxUAbqFfqw5WEdM7d0yLv9MTVTozMohWlvMEP8I4u8BGNSZgw3URC2A2hANsdkYwORb5uCtQ9QAeMUcjGKi8eHF9ffOc7DKVKvzbi+JKVhHbfyXgPkhv1BNRJSEafwnMdUaDVHOmrd0vZqHUBNNTDVdTP6/X2KqSbSJDPAfzEH/CoDXiBkoXH6PqSbEJBo/TH5KTfyYqSaGaIoDOgGMf4tHb4oZY0YRbN73P2eqNfHoTTGZxueCVIyTR1AT7pnkUhOCtfPVfJepdlc1YZpqRvDvMsAnnYMawG9WExLtD6mJSz1YNbh/eg5epSYEbUC5/DpTTdBG+A9R8vOm2p3m4MUhSlI4YQaNlk/q0ZvDmWj8NNVaPphHrwvtZG3JEbXx47jG/4VqQoh5O8B/mXxpDPAhvIlbPPoGPfjIppqRfKnI0zoB/pY5GNBf/zpTTbAm2VGR5n+IOXiLR2+KSWo1hMZ/1uRLBcCYlJzwUpsHM9XuEnhok8xT+C0A/6GpZojJ//ckplp9NaEC/IVq4naAD5V8aQDwt5hqgpY8VdS1PY1HX3sOBiT9C5Pmff8kc1Cra3vW5EtFP7TVuranMNWaqImwRepQLXVtNwC81VRzAbxJmzVu+W3JlzuZajcDfLDkS22Aj+zRX2OqfUsPPpKaEKy1uran9+gNMXld2z831e7k0ZsqhdW1PfIcbOLRm2KqdW3XAAzjUAd43+QL5Dmy65YKQhI0B0hL/kA6KvrHfr8Y+GgcAA6wvkdfYw7mxbKPOeQ8lnRVPzRuCfLRcbE7e9K1/RoWLUx7H48etfGL4ddWZrGeDpc+5Gmk7wQ4etkxzp1Oh93QH3/mA8b/tiEawMHwVQbncUbe2+E4+i6ASCIMb76W2Ha0G/Six1lNgO7ki895iMeWzyc85iPAB20Ni5L813SrbWY6AMe11GMdQwD6czoCyQ0e/WhqdJx58zZO6/ZgROvaLq+/SZgvOub7tA6l3QRc6kGXmpjtzMeZbxL/0x3VAsjq2vg+P/cQjUZdlcvfz+nwOJiNRrPBbLacTzcK2GleE6A6B/ODPEScANnNdBallwDSurYUylxsAEG851zIv4eXmdBXbUaS97sdSZAhmk9N1cTC00d8FUCMEar9YFqUWl2bE+BR6p7zYoBlFPOKK3r8zMH0r+iD9yLkAOupicm7snhdBEh+jqt7UEkhugHmpxLfoaC0Lo/en7+Jzu5G9h60zsG0a0h/CSC52czCyxtVLwB8KfEtfLWlaaq10+h45vxXo9rJl9nqOoDomoPbAIYHgW/oay1d3sTY42P1BbRcAKU5mNG3eBVA9GMHbwE4ErZZl6Gok3zxxWuZpq4eLOcgBNPrAeKf21EVwID+2gGw4J3xOohirWWFR98OijPjf0rtAEs1AeHrbQBRLwI3QLWuTQf4Uo62uH7yJWqjxwUHJsjarzbVUn99K0DvFDoDD2pdmw5wzgCuc9Cq69HneT7KkwymeDaS1u85rDDV0rx3M0DvNXT1YEb8V+6QuABOS+V90aOH7564hPkzMmPOZQ/+vR2gt0Fvdm4NPBB7JNC8dA6Q98EYvfLaUbX0zTDMO94qVgFKczBZ3Q6w463RmEJawyIm6zwrwCMD2LeUvruTL/GbZxFkA+ymGgSbOwBErxC9NtQVgUNMO8AJA/hHjvzUiKq9WSV6BcCiJjJw8ypKb7bocR3cGQ0A+nwV/XTPQUvypcUR6teXdavxzk7cFKDXowi9kVVMK0Cw4dNpEzdJvsQRWfqnyyUOIB2P4/HLeDyez+f7ATABjhZzfI1fXl6OR0SNmvQPVwD0OiAN8Iq1iiwAA8pOA9ilANEg2gjfUR+iCd+/yLUpXspCgnAIHJdiqmkX/cP8CoCeB3zwgX8egCGmXtdGAS5pu/mRLhK2HkTC5vmgP56Pj5M84gAJwg5a1uC+i65pl15TcrNPA2mRaePfYaoFuoboQr15BGDoXQHQCxJA1Kr3EqhiBkTXh5nmKmdUqe2wTbOxAgwG8936r8ev9aGfgxh3JULYwQhbQldJ16sooEem2tpC8IkRXgHQQ8/E8b+O97etAiSnt4i6NuHw0oDFllht68AEOJmWgUzB9kRWsoAhbPdsmvlTAAw2NqFfQbq4AmAHIzxTkoMCUK1rEwAntN0AZAwhlH288EWO03akvtqiQQbWeJQNKUJTog0DCKwAvc8sHV4BkCB8YyQDizZTAYYpDcYOgZ/2EcJQ7sEQHN/Vt6fw/2/JVxqM0CbRayjpQU+/NgkbpQ0BevTVkt98mgaXBjDrk3YriIxtglACCPI/ysPLi//mtKIIqT1tkegE2xn4ok3Om/V6/bY6b997H+Svm4BEo2wMHI9jN6Gk3/pxJcCglX1SOohWRoww4UGnuMXWWPrwc3fcH6VRFMHJnAdyONdhwBGaEn1m4EBpNykf+kFAzXyGUAK4G09gFLb8vBjvV26kaAX75H/6DCqHaCsrCNkGYEW/xLGWPEmSOM78PJsLGK9H5PXxMGuAXkH/jycNpX3q9+wAsW3VZQApS3bsGNGDaErspUavR8qAF6XFL1JMTLl8GJ0EownrQVYmxOrahHUCKGVBOg732d+Pj17vfbs9n89cxukImIGR2aHswz1Iei6AL3QcomkgFi+GEA2YCCHktF8sci6XNIPR9H213rzudodpdz9EyriYTAazGZpAO8aog7Sc7PTodW0gpz1N2RaW1cB7HQELQEy94TAWeKVxAJzTm22LAWRzhfz6DWKEVIIJPy9QsygTmPJ5AyBT5JHPhz7h5EsWJa1rgzyQhISmwW1qpXPbRrnGlNaSAI14yIwhtAIcM4C+MjsCSBD+B5ku9o7AFVlhwWd8E3PvDwOYCoBYHXOnR6lro71CDJUVfRYcLQt8ISt6yaKmnQmjtWd4888SoRUgfQfee86E5nUyFOGqTQLD3mcOqvKDwMexklnRP77Mh4t9d3rY/dlIEfNzIIJ/cl0bBVgwCQlA/vAUcWPxwYFEawIE9FWieVjqQwXgkd2QgS5H4EiM1TvnAUbYRUOkMgE6sIwtaaHz2Ay2VkVNiQAzClAy1Qq5aUWdTEyMkj1o9Uq+JcA+u5kxgFKdDEOIZ8nYHd3kYk4qjQLm2wgxZbjBCrd8UwASG2jtUZ+BtqxMgL5ghIbGxwALdjOwCE0QbttoHg7qpLDnZjhIsno2iphKy5lHzUrd2F4S0TYqF1d+sO91Q13jY4ATdlNItCJAReJeCOE4r1UMAjcVAL1OLi0VgdT3mE+HjkXNm/gs332NHP1yGmkaHwOcsZslo1VLucaY9r0FahYhwEEFQMxDAKR1bQkfsMRg9AyPPictd0rfV2R4YU71oQxwPGI3fStAqgd7fv0qi10FQDRNuJiRcnpL5BPT79VweGloYQLq1skEoPWhAczZzZEJrZVT0sHz169fRjKp8jxOGRdTqWtL29SgGQI9ZEHs9pXJxdqDpFeiswrQ71D+LxZawNYZz3uP3auowfpsW07pT69H9a1W14YGN/V9j5kGMCcNF43qZFAbCSDs0Zs5o9WGKM+iz9x60MzR7y3LqcdZ+oyWRtuBEJq+ypmWo2fGW9GonBLMeiXAdCsDNITuc4CVloxeJ8NbWZ3jQqEtW1IH21e5BCx20rCcEtLkKgYIaAqbmUrGJmVu/U6aAIStuAIgsZ7FiJdaEovmP7XcKGhHxGL7MLOQF+pk8i0D+EbZdu20zFxCr71hWWtV1mph9iAZ3Cf85xMTRERzqMt4ihqXNPt4QR2DDWV7YLTaHOQ2Zt8N0FF5fXID9KZaXRtPvrwJSeRwFY0uddPm5ZSoF8ck6iQAGkLXAOjK0e/dAJHGs9e1EYdgqnBBrnJGJhSdRM328MazMXvT1FwwaTnAl+YAcXjcGYF7S3mqQalroyN7rydf4m1pdTfepExND5xeA5YhOvqgAo2vACilOMx41ztDpNW1RR7tLC2iihB2GMIaANVatYNXGvsmwJwlBuagdUXt/NBzAeyQCCoWUzm9BfqAIgy0Ohn4H9dljcsppwxgSoXW1ETOenCIHtMcYKgnAJQuZWKqdW1s/e1CPUe/oWI0L6ektWreOrHS5iwAugDZaNtvCjCGeyfADtJtVoAkf0NWGiAnQOGJ/rrxJmUW3e3FlFYboglLF3cRwDPx+5tt0GGOkBWgd7YDBCT5d+AAudC0tG0NLptqaknzkLKlYTVDaHguARJHJE8b9CBeKlZugDjLZQOIFj6u8eU6GWbMBWIvRL05OGcAR1Zanj88ADij6cpzrmX5Lm3QqQCIHisABnJLEnB+i/QcPbWrZhcBKnPwhbG1A4zYboNDBGdbtv5tmgGcVQBEc1sECmldm7L+tnXzayS5dnVLmvuM7YzSanMQMIC7FM56QrRdTYBUm71UAPTmPGKu1rWl1E/LgS70m1DadUuaOcCBVWjwh8pxCuFMFq3bZJPcZwVAr88L1NW6tjaJpXhHqNfJTEnf5vWHaMHYFlZatgrilO/gQxFtHtT+9k7uuWsaiKyEtVbXlmbUbIP6K6fO5rD2zpcBY7uktPoQZXtG1n6kAfTYVKizl7pfUbThbdXEltT3RPOt6S8kjz4kDd/9VoWakADyNYBocUNNcIBvCKAhGo2q19jHKQID1miNaufLr2ZB/h5SLpJHTw2khXgZlWqCAzxSgJqpxrJb3tkPJ57lmtUZoshbKIMYBkAW1rcBBBPx7lUuOX3BuQOgMgfTVRlIsMxBZk1u83CC50QHZ2BxAnb139vber3ZfAW1tvtnywqAZIGzAgQ0VH0wky9T0nKtCO3Y+bKjbOeUVp+DNFOOq2pZYK+dtyCEaRT5JJ9faaqJIYpstqIC4DaTxKRZbv5qAjIROzDQo2o+DQ4eLm9S7lK2ZJyYc1AA5FU7RyhWckbS5nuy3HMwmbDwjh2gIib7Khk3COGRsTVS2Ey0fWA5ykbuQRZamCq9LXqQ706ZifjTkSZOQt9PsqTd8v3RKM/tAIVhHnX3pUKyAETTTLBmp7eIYRdAQvgJNYAZC0eVnodj99mUclmTjLsxRDnACY8gdvCcH/+Hq2pWq/N5u31/7/U+MJMKgGiYLHgu1wrQE+XPvK4t5ABDnusd6AAzELLag1MCnHMQbyzAXDq+FSBf/gregx2CUBTrldc6h84h6p/Iqj5xA5wCMXiUr5JR5T0o9YkWVcv/skccyw3N6hwcMy5bsvuQV2lqdgO2A5alRH1rSSkviLAAPOIVmCJ0APQG+rcAOUD6yknpHdZKhsPLK8e8zz5zpMoh2g5Bf825HOakXHQ8HshcxMzjUDtMM9lKSlE3Lm1DdElLnxZlpNwEuIF2gLywhc6VTxNgKDYaIHtkTpwivuyhDh6rO1/otZe4TNhfXtJwKkm0FBrSmFfrcc7T1DRZNhu+iQfHS4VWZs0qqQyAouSEPqUPdY8eJxelvGdvyuvaZse9qND3lGshMgFgwMJqY7x/6rWUaFlRUore5OI4g1hVjpbzQ1mx6+3TbOICuNanvzJEsUdPFca7r/YgGicIYX9owigvHAE6nU5/Xj/R9brFcXIOcMbjhiF+XPouJFpCuNBejxEFlRnQq5tSfWoByJLMAiDV+LHis5AFkeVRSm+iFZ9x68HGYCdJ8kXtOvK0Kd6bx17jiFXdDkP6uJFwfdCUXrgA6gjLX3Rpna+t0mSjAuR1bcrOl0np20nuUpQShFncX7sE+ZxwWo6Qz1IWN0SDi/4iFPVkfaCVlDp1gESC4/KuLPdEBah8lUzoti/6ghPVo8fBsT4xdgZduc6bPfx9ygI5fM0SCAMBMCpDgUcma0GdjUYACcKB3W86KADZV8lSuewL/5pmtb3XQNniCrc4Ac5exmT+tS4H0eo0LNi8LU16jjBssbDaFMpLPwvFFUApKa0HEI/SgWfLchNbQz/KJtAApn7E8up7RWi88Y4txBGGHvj54DgeH4tRDpF5JHqbLWXplFjAIExYUOYLqrptz+fCvjFAhtBCcgQ2i1IdokQPsrMNjnKv4GqDvkobxkyJWs50ihDCL0zCNjftYr1elBiIE6nkoDZAXNtXeBaSqQxQxKdZDyruUnSmLfFqI6pteizwUu+EWOxG7dAcZzGL17YOMIlPFGHX81QYlyv0u8iB8sxrrfSgBlBzl/hyXgyKZTHBFabH8V+KsO6xYwRhwGIWa18HiBwZsMEIU3HiRm2AaErD0Q5fpz9Y/74iDbz53Kxz2xANrADVgyLKa2l49MA6RDEXJPiJu5VnC8CI5C4mcaSdKVJnj8WB6dmAfz+dV6qbbiurazPLSFhtjaZ1lw1OiEW9d2K1TufcXrMN/E4Rs1HaACDPHiGDn63bWTs0ANK/qHVtqrG94FyQa7oiQaLPzQRU9aBq0iOELAPam/EItP4ywGTA5mETgMi7y3NSCD3K6c0o93NrD6bKV8l0b6LLuAyD2OeiNTj6byGWyIljLzWaHSyy0wygGFfo9i++Pj56ODBkCTxodW3Wmm2PqGo2ppt8SVk4RcvAAVCqvL4KoHx1bWpC3cdp1snEwq85z3jfu3rQTL7M+AbDvgsgp51eBVC9GdrmoBDT0YN42I35w3H0s8lh/uWZL2zrRkWOnuvuGwCO3bGxaoAkVkAftZ4A93cgzTISsUGpuNSDIIWFW/oaAD2ixBr0oNYrudh+vhtpLd2nU4ro2XbgXmQkFUzcx6sBKore1GZKXZslfZa1hVFFd3RdPCE2G3/wBqfcceSGbmPEf+y+UB2AXVDZg/pXycwEaAD65S6trwLw9LHjpPR8uBVuzcJ5Mp5pREnhqEYAe31QOQehUtfmytEnUyG0dx6OdIDcv0A+1PFUSvRepHq0uqJOBhY9Q/pLAPGwSqp7UK1rqyhpLvhJhkT0RRGLbWMZO782zfvDjSzRIowb1qrtGwNcD0A1QP2rZBUlzeCoHMblrQ8LceJe8TLslmd9UhK0LDUvxhtVHCloAbg66mI61fUlgGRwRy/lgaVWq0KSaDe4tPvMBhD9qdjVBngeQ5uYjQDqyZfouNa4mK8cX/jMxivPWg7AqCu/QifAzZHXONurPm0AL9fJtFIwoxuqnX6b19v1FS7XHCZ9PH1oz9Vm52o/Ape/59BsiEotJ92Njov//OwufYW2WTklp4WhX3TF5nN9zGz2ZONZ/bOWlbq2S3UyRDQI/f5i9+HJ13m3H8/8JNK41Dgh1nbsDWHdGsz36lnFXu+06Pv2fqj7VbIm33yBowk+ZWdZTJg1JzJR9znvnMcn/QFm018OfH7etLXy2immUtfW6CBx7kRk3DpqcpB41eFhPAnG4yz89Tf5/F3pAdK6tsjV8psO87/yQHcn6wox7V8l++7D/O/0aZoaQ1RYlI5X802H+d/rmwP13627ZW2P/m5z0BiidSqvNdaGmK6W3/TNl0o1cd856OjBb/ru0jcN0Tpi0rq2y18lu883X5qoieu+OWAsFayu7ZHUhLmKXjVE1bq2SHuNP6YmdFOtGcAaYibqV8m+5/N8//ALZoHzq2Q11MR3z8ErZod7qdBaPr+pZqRQKJdvN9XurSYaAnx6U60iR0S51LFkfkxNXDbVGswk7atkz2qqxU4x+VfJmszBf64mGmkz/atkLoBPZqppn94SXyX7BWrCEJOQ8Lq2f2iqNfDo65hq9qqoZmrigUw197sVM+nyq/l5j/4qY9u1VND/NbCBHnUOusQMFC7P79EbYhKNHyYN1t87mWq60PdWE/xxqVLX9him2n3UBGet1LV9uzdxm6nmZl0hpv2rZA+pJq4MPMh1bU9sql0U09HyeU21mj34EMmXy7GxGmI6Wj62R19xdqshZkC5PIKpdkPyxQaQPU6va3sKj76JmGqW+4lNNZc2U79K9l1qwjTVvsujN8Wkp7dEWstnS7641US5hV9r+d3Jl0Y9eA+LUm35SKbanQIPdi4/YKrdNflSIWZjLo9hqrmHqD4HA/rrHzPV6h9FfKfgn/2rZI9pql0VeFC/SvZkpppNTH2IxmSDYlnX9simWh2P3hRTq2t7KFNNY32lNpNypM/j0TcP/tXm8mymmg7woZIvboDNxTRaPqCpViP5UkFLnmqpa3uu5ItFTL59Xf8q2W8x1YSYal3bY6iJu+aILF8lA8+XfKkS01XXdgPAH1QTTlPNUTT0CKbaVcmXy2LSlnyjdtTmYbg231kqzl1pMy7txKDlljw7qCJI2EEVIadNDdrYQgsYbWbQMtaJydoUU2NNW2b81AR+Tk7KbyDfLgrZOSKVtBEnYVw4bVTSpgat9rjIZB3XZg0yXUz6v5SfFcVPEw3Zackg4jcpOy8rgDptVNIykpRlJCtoxeM466AG66vEDMt/pZsgDIwbjaQJrY0kaPC4JrSGmMH/W8KAjxs7aKUAAAAASUVORK5CYII="/>
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">DevOps</h1>
+			<!-- <h2 class="quickFade delayThree">DevOps</h2> -->
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+                <li>What is DevOps</li>
+				<li>
+                    DevOps Architecture
+                </li>
+                <li>DevOps Lifecycle</li>
+                <!-- <li>How Linux processes work.</li> -->
+                <li>Workflow and principles</li>
+                <li>DevOps Tools</li>
+                <li>DevOps and Agile</li>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+
+
+
+
+
+	    <div id="mainArea" class="quickFade delayFive">
+		    
+            <p>
+                <center>
+                    <h1 class="headings">
+                        What is DevOps ?
+                    </h1>
+                </center> <br>
+                The DevOps is a combination of two words, one is software Development, and second is Operations.
+                 This allows a single team to handle the entire application lifecycle, f
+                 rom development to testing, deployment, and operations. DevOps helps you to reduce the disconnection between 
+                software developers, quality assurance (QA) engineers, and system administrators.    
+                <br><br>
+                DevOps promotes collaboration between Development and Operations team to 
+                deploy code to production faster in an automated & repeatable way.
+                DevOps helps to increase organization speed to deliver applications and services. 
+                It also allows organizations to serve their customers better and 
+                compete more strongly in the market.
+                <p class="mini-headings">
+                    Why DevOps ?
+                </p>
+                • The operation and development team worked in complete isolation.<br>
+
+                • After the design-build, the testing and deployment are performed respectively.
+                 That's why they consumed more time than actual build cycles.<br>
+
+                 • Without the use of DevOps, the team members are spending a large amount of time on 
+                designing, testing, and deploying instead of building the project.
+                Manual code deployment leads to human errors in production.<br>
+
+                • Coding and operation teams have their separate timelines and are not in synch, 
+                causing further delays.<br>
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        DevOps Architecture
+                    </h1>
+                </center> <br>
+                Below are the various components that are used in the DevOps architecture:
+                <br><br>
+                <center>
+                    <img src="assets/DevOPs/1.png">
+                </center><br>
+
+
+
+
+
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        DevOps Lifecycle
+                    </h1>
+                </center> <br>
+                DevOps defines an agile relationship between operations and Development. 
+                It is a process that is practiced by the development team and operational 
+                engineers together from beginning to the final stage of the product.<br><br>
+                <center>
+                    <img src="assets/DevOPs/2.png">
+                </center><br>
+                <div style="color: darkblue;">Continuous Development</div>
+                This phase involves the planning and coding of the software. The vision of the project is 
+                decided during the planning phase. And the developers begin developing the code for the application. 
+                There are 
+                no DevOps tools that are required for planning, but there are several tools for maintaining the code.
+                <br><br><div style="color: darkblue;">Continuous Integration</div>
+                It is a software development practice in which the developers require to commit 
+                changes to the source code more frequently. This may be on a daily or weekly basis. 
+                Then every commit is built, and this allows early detection of problems if they are present.
+                 Building code is not only 
+                involved compilation, but it also includes unit testing, integration testing, code review, and packaging.
+                <br><br><div style="color: darkblue;">Continuous Testing</div>
+                This phase, where the developed software is continuously testing for bugs. For 
+                constant testing, automation testing tools such as TestNG, JUnit,
+                 Selenium, etc are used. These tools allow QAs to test multiple code-bases thoroughly 
+                 in parallel to ensure that there is no flaw in the functionality. 
+                In this phase, Docker Containers can be used for simulating the test environment.
+                <br><br>
+                Automation testing saves a lot of time and effort for executing the tests instead of doing this manually. Apart from that, report generation is a big plus. The task of evaluating the test cases that failed in a test suite gets simpler. Also, we can schedule the execution of the test cases at predefined times. After testing, the code is continuously integrated with the existing code.
+                <br>
+                <br><div style="color: darkblue;">Continuous Monitoring</div>
+                Monitoring is a phase that involves all the operational factors of the entire DevOps process, where important information about the use of the software is recorded and carefully processed to find out trends and identify problem areas. Usually, the monitoring is integrated within the operational capabilities of the software application.
+                <br><br>
+                It may occur in the form of documentation files or maybe produce large-scale data about the application parameters when it is in a continuous use position. The system errors such as server not reachable, low memory, etc are resolved in this phase. It maintains the security and availability of the service.
+                <br>
+                <br><div style="color: darkblue;">Continuous Feedback</div>
+                The application development is consistently improved by analyzing the results from the operations of the software. This is carried out by placing the critical phase of constant feedback between the operations and the development of the next version of the current software application.
+                <br><br>
+                The continuity is the essential factor in the DevOps as it removes the unnecessary steps which are required to take a software application from development, using it to find out its issues and then producing a better version. It kills the efficiency that may be possible with the app and reduce the number of interested customers.
+                <br>
+                <br><div style="color: darkblue;">Continuous Deployment</div>
+                In this phase, the code is deployed to the production servers. Also, it is essential to ensure that the code is correctly used on all the servers.
+                <br><br>
+                <center>
+                    <img src="assets/DevOPs/3.png">
+                </center>
+                <br><br>
+                The new code is deployed continuously, and configuration management tools play an essential role in executing tasks frequently and quickly. Here are some popular tools which are used in this phase, such as Chef, Puppet, Ansible, and SaltStack.
+                <br><br>
+                Containerization tools are also playing an essential role in the deployment phase. Vagrant and Docker are popular tools that are used for this purpose. These tools help to produce consistency across development, staging, testing, and production environment. They also help in scaling up and scaling down instances softly.
+                <br>
+                <br><div style="color: darkblue;">Continuous Operations</div>
+                All DevOps operations are based on the continuity with complete automation of the release process and allow the organization to accelerate the overall time to market continuingly.
+
+
+
+
+                     
+            </p> <hr>
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Workflow and principles
+                    </h1>
+                </center> 
+                <p class="mini-headings">DevOps Workflow</p>
+                DevOps workflow provides a visual overview of the sequence in which input is provided. Also, it tells about which one action is performed, and output is generated for an operations process.
+                <br><br>
+                <center>
+                    <img src="assets/DevOPs/4.png">
+                </center>
+                <br><br>
+                DevOps workflow allows the ability to separate and arrange the jobs which are top requested by the users. Also, it gives the ability to mirror their ideal process in the configuration jobs.
+                <br>
+                <p class="mini-headings">DevOps principles</p>
+                <div style="color: darkblue;">End to End Responsibility:</div> DevOps team need to provide performance support until they become the end of life. It enhances the responsibility and the quality of the products engineered.
+                <br>
+                <div style="color: darkblue;">Continuous Improvement:</div> DevOps culture focuses on continuous improvement to minimize waste. It continuously speeds up the growth of products or services offered.
+                <br>
+                <div style="color: darkblue;"> Automate Everything:</div> Automation is an essential principle of the DevOps process. This is for software development and also for the entire infrastructure landscape.
+                <br>
+                <div style="color: darkblue;">Custom Centric Action:</div> DevOps team must take customer-centric for that they should continuously invest in products and services.
+                <br>
+                <div style="color: darkblue;">Monitor and test everything:</div> The DevOps team needs to have robust monitoring and testing procedures.
+                <br>
+                <div style="color: darkblue;">Work as one team: </div>In the DevOps culture role of the designers, developers, and testers are already defined. All they needed to do is work as one team with complete collaboration.
+                <br><br>
+                These principles are achieved through several DevOps practices, which include frequent deployments, QA automation, continuous delivery, validating ideas as early as possible, and in-team collaboration.
+
+
+
+
+
+            </p> <hr>
+
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        DevOps Tools
+                    </h1>
+                </center> <br>
+                <center>
+                    <img src="assets/DevOPs/5.png">
+                </center>               
+            </p> <hr>
+
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        DevOps and Agile
+                    </h1>
+                </center> <br>
+                <center>
+                    <img src="assets/DevOPs/6.png" width="700px">
+                </center>    
+                <center>
+                    <img src="assets/DevOPs/7.png" width="700px">
+                </center>  
+                <center>
+                    <img src="assets/DevOPs/8.png" width="700px">
+                </center>                   
+            </p> <hr>
+		
+	    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
